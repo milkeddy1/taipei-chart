@@ -16,6 +16,9 @@ const Tab = ({ data, search }) => {
           search(e.target.value);
         }}
       >
+        <option disabled selected>
+          --請選擇一個區域--
+        </option>
         {towns.map((town, index) => {
           return <option key={index}>{town}</option>;
         })}
